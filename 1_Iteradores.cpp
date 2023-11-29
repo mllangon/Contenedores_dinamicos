@@ -6,7 +6,7 @@ int main() {
     vector<int> numeros;
     int numero;
 
-    cout << "Introduce los números que quieras añadir al vector (0 para terminar):" << std::endl;
+    cout << "Introduce los numeros que quieras introducir al vector (0 para terminar):" << std::endl;
 
     while(true){
     cin >> numero;
@@ -16,5 +16,10 @@ int main() {
         numeros.push_back(numero);
     }
 
-    cout << ""
+    cout << "Los vectores son: " <<endl;
+    for(auto iter = numeros.begin(); iter != numeros.end(); iter++){
+        cout << *iter << " ";
+    }
+
+    return 0;
 }
