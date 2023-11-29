@@ -13,4 +13,11 @@ int main() {
     for (int n : numbers) {
         squaredNumbers->push_back(square(n));
     }
+
+    cout<<"Cuadrados de los numeros: " << endl;
+    for_each(squaredNumbers->begin(), squaredNumbers->end(), [](int n) {
+        cout << n << " "; });
+    cout<<endl;
+
+    return 0;
 }
