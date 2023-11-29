@@ -9,3 +9,15 @@ int main() {
     sort(numeros.begin(), numeros.end());
     cout << "Numeros ordenados: " << endl;
 
+    for (int num : numeros) {
+        cout << num << " ";
+    }
+    cout << endl;
+    auto maxElement = max_element(numeros.begin(), numeros.end());
+    cout << "El numero mas grande es: " << *maxElement << endl;
+    auto minElement = min_element(numeros.begin(), numeros.end());
+    cout << "El numero mas pequeno es: " << *minElement << endl;
+
+    return 0;
+}
+
