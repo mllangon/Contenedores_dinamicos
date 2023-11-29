@@ -8,6 +8,13 @@ using namespace std;
 int main() {
     auto square = [](int n) { return n * n; };
     vector<int> numbers = {1, 2, 3, 4, 5};
+
+    cout << "Numeros principales:" << endl;
+    for_each(numbers.begin(), numbers.end(), [](int n) {
+        cout << n << " ";
+    });
+    cout << endl;
+
     auto squaredNumbers = make_unique<vector<int>>();
 
     for (int n : numbers) {
